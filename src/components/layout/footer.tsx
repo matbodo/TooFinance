@@ -1,4 +1,5 @@
 import type { NavItem } from "../../types/site";
+import logoBranco from "../../assets/logo-branco.png";
 
 export function Footer() {
   return (
@@ -6,10 +7,9 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <a className="brand footer-brand" href="#">
-              <span className="brand-mark" aria-hidden="true" />
-              TOO <span>Finance</span>
-            </a>
+            <a className="header-logo" href="#" aria-label="TOO Finance - início">
+          <img src={logoBranco} alt="TOO Finance" />
+        </a>
 
             <p className="footer-description">
               Soluções financeiras para quem move o ecossistema da saúde.
@@ -39,7 +39,7 @@ export function Footer() {
             title="Contato"
             links={[
               { label: "contato@toofinance.com.br", href: "mailto:contato@toofinance.com.br" },
-              { label: "(11) 0000-0000", href: "tel:+551100000000" },
+              { label: "(62) 99904-2011", href: "tel:+5562999042011" },
             ]}
           />
         </div>

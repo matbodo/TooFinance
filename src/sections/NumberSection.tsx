@@ -12,7 +12,7 @@ export function NumbersSection() {
   return (
     <section className="section section-dark">
       <div className="container">
-        <SectionHeader eyebrow="Números" title="A saúde financeira em números" dark />
+        <SectionHeader title="A saúde financeira em números" dark />
 
         <div className="numbers-grid">
           {numbers.map((item) => (

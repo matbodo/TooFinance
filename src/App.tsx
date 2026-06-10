@@ -5,10 +5,13 @@ import { SiteStyles } from "./styles/SiteStyles";
 import { BlogSection } from "./sections/BlogSection";
 import { CTASection } from "./sections/CTASection";
 import { EcosystemSection } from "./sections/EcosystemSection";
+import { FAQSection } from "./sections/FAQSection";
 import { HeroSection } from "./sections/HeroSection";
+import { HowItWorksSection } from "./sections/HowItWorksSection";
 import { NumbersSection } from "./sections/NumberSection";
 import { PartnersSection } from "./sections/PartnersSection";
 import { PersonasSection } from "./sections/PersonaSection";
+import { SecuritySection } from "./sections/SecuritySection";
 import { SolutionsSection } from "./sections/SolutionSections";
 import { TestimonialsSection } from "./sections/TestimonialSection";
 import { TrustBar } from "./sections/TrustBar";
@@ -24,8 +27,11 @@ export default function App() {
       <main>
         <HeroSection />
         <TrustBar />
-        <EcosystemSection />
         <SolutionsSection />
+        <EcosystemSection />
+        <HowItWorksSection />
+        <SecuritySection />
+        <FAQSection />
         <NumbersSection />
         <PersonasSection />
         <TestimonialsSection />

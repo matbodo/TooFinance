@@ -5,7 +5,7 @@ export function PartnersSection() {
   return (
     <section className="section section-soft">
       <div className="container">
-        <SectionHeader eyebrow="Parceiros" title="Parceiros e integrações" />
+        <SectionHeader title="Parceiros e integrações" />
 
         <div className="partners" aria-label="Lista de parceiros">
           {partners.map((partner) => (

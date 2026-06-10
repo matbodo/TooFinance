@@ -13,7 +13,11 @@ export type EcosystemItem = {
   title: string;
   description: string;
   href: string;
-  icon: string;
+  icon: IconName;
+  problem: string;
+  indicatedSolutions: string[];
+  benefit: string;
+  cta: string;
 };
 
 export type Solution = {
@@ -21,8 +25,14 @@ export type Solution = {
   title: string;
   shortTitle: string;
   description: string;
-  icon: string;
+  icon: IconName;
   features: string[];
+  audience: string;
+  whenToUse: string;
+  benefits: string[];
+  documents: string[];
+  averageTerm: string;
+  cta: string;
 };
 
 export type Persona = {
@@ -45,3 +55,17 @@ export type Article = {
   description: string;
   href: string;
 };
+
+export type IconName =
+  | "banknote"
+  | "building"
+  | "credit-card"
+  | "factory"
+  | "graduation"
+  | "heart-pulse"
+  | "home"
+  | "landmark"
+  | "line-chart"
+  | "shield"
+  | "stethoscope"
+  | "store";

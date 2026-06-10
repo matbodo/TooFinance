@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navItems } from "../../data/ecosystem";
+import logoVerde from "../../assets/logo-verde.png";
 import { Button } from "../ui/button";
 
 export function Header() {
@@ -12,9 +13,8 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a className="brand" href="#" aria-label="TOO Finance - início">
-          <span className="brand-mark" aria-hidden="true" />
-          TOO <span>Finance</span>
+        <a className="header-logo" href="#" aria-label="TOO Finance - início">
+          <img src={logoVerde} alt="TOO Finance" />
         </a>
 
         <nav aria-label="Navegação principal">
@@ -28,8 +28,8 @@ export function Header() {
         </nav>
 
         <div className="header-actions">
-          <Button href="#login" variant="outline">
-            Acessar conta
+          <Button href="#contato" variant="outline">
+            Falar com especialista
           </Button>
           <Button href="#simulador">Simular agora</Button>
         </div>

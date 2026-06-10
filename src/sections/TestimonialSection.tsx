@@ -6,7 +6,7 @@ export function TestimonialsSection() {
   return (
     <section className="section section-soft">
       <div className="container">
-        <SectionHeader eyebrow="Depoimentos" title="Quem usa a TOO Finance conta" />
+        <SectionHeader title="Quem usa a TOO Finance conta" />
 
         <div className="grid grid-3 section-grid">
           {testimonials.map((testimonial) => (

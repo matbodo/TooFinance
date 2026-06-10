@@ -7,7 +7,6 @@ export function BlogSection() {
     <section className="section" id="conteudo">
       <div className="container">
         <SectionHeader
-          eyebrow="Conteudo"
           title="Educacao financeira para o setor de saude"
           description="Guias e insights para organizar caixa, proteger patrimonio e tomar decisoes financeiras melhores."
         />

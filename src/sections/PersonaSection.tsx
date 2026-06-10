@@ -7,7 +7,6 @@ export function PersonasSection() {
     <section className="section" id="sobre">
       <div className="container">
         <SectionHeader
-          eyebrow="Jornadas" 
           title="A solução certa para cada momento da carreira"
           description="Personas organizadas como dados. Perfeito para renderizar por map no React."
         />
@@ -26,6 +25,10 @@ export function PersonasSection() {
                   </span>
                 ))}
               </div>
+
+              <a className="card-cta" href="#simulador">
+                Solicitar análise
+              </a>
             </Card>
           ))}
         </div>
