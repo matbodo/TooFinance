@@ -1,5 +1,3 @@
-import { Button } from "../components/ui/button";
-
 const steps = [
   {
     title: "Você informa seu perfil e necessidade",
@@ -24,7 +22,6 @@ export function HowItWorksSection() {
     <section className="section section-soft how-it-works" id="como-funciona">
       <div className="container">
         <div className="how-header">
-          <span className="eyebrow">Como funciona</span>
           <h2>Como a TOO Finance funciona em quatro passos simples</h2>
         </div>
 
@@ -36,14 +33,6 @@ export function HowItWorksSection() {
               <p>{step.description}</p>
             </article>
           ))}
-        </div>
-
-        <div className="cta-strip">
-          <div>
-            <h3>Quer entender qual caminho faz mais sentido?</h3>
-            <p>Compartilhe seu perfil e receba uma análise inicial das alternativas disponíveis.</p>
-          </div>
-          <Button href="#simulador">Solicitar análise</Button>
         </div>
       </div>
     </section>

@@ -57,10 +57,9 @@ export function SolutionsSection() {
   );
 
   return (
-    <section className="section section-soft" id="produtos">
+    <section className="section" id="produtos">
       <div className="container">
         <SectionHeader
-          eyebrow="Soluções financeiras"
           title="Tudo que o ecossistema de saúde precisa"
           description="Linhas de produtos desenhadas para quem vive o mercado de saúde todos os dias."
         />

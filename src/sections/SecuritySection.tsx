@@ -24,7 +24,6 @@ export function SecuritySection() {
     <section className="section" id="seguranca">
       <div className="container security-layout">
         <SectionHeader
-          eyebrow="Segurança"
           title="Confiança antes da contratação"
           description="Soluções financeiras exigem clareza. Por isso, o site precisa comunicar privacidade, parceiros e processo de forma objetiva."
         />

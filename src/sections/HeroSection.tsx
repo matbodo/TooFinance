@@ -8,12 +8,12 @@ export function HeroSection() {
         <div className="hero-content">
 
           <h1>
-            Soluções financeiras para clínicas, profissionais e empresas da saúde.
+            Finanças para quem move a saúde.
           </h1>
 
           <p className="lead">
-            Crédito, seguros, pagamentos e planejamento financeiro com atendimento especializado
-            para quem precisa crescer, proteger a operação e organizar o caixa.
+            Crédito, seguros, pagamentos e planejamento para clínicas, profissionais e empresas
+            que precisam crescer, proteger a operação e organizar o caixa.
           </p>
 
           <div className="hero-actions">

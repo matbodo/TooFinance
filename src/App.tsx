@@ -28,6 +28,7 @@ export default function App() {
         <HeroSection />
         <TrustBar />
         <SolutionsSection />
+        <PartnersSection />
         <EcosystemSection />
         <HowItWorksSection />
         <SecuritySection />
@@ -36,7 +37,6 @@ export default function App() {
         <PersonasSection />
         <TestimonialsSection />
         <BlogSection />
-        <PartnersSection />
         <CTASection />
       </main>
 

@@ -2,7 +2,7 @@ import { Button } from "../components/ui/button";
 
 export function CTASection() {
   return (
-    <section className="section" id="contato">
+    <section className="section section-soft" id="contato">
       <div className="container">
         <div className="cta-box">
           <h2>Pronto para ter um sistema financeiro que entende a saúde?</h2>
