@@ -1,9 +1,16 @@
 
+import type { ReactNode } from "react";
+
 type CardProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
+  id?: string;
 };
 
-function Card({ children, className = "" }: CardProps) {
-  return <article className={`card ${className}`}>{children}</article>;
+export function Card({ children, className = "", id }: CardProps) {
+  return (
+    <article className={`card ${className}`} id={id}>
+      {children}
+    </article>
+  );
 }

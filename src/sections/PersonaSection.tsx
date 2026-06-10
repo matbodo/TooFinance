@@ -1,5 +1,8 @@
+import { Card } from "../components/ui/card";
+import { SectionHeader } from "../components/ui/sectionHeader";
+import { personas } from "../data/ecosystem";
 
-function PersonasSection() {
+export function PersonasSection() {
   return (
     <section className="section" id="sobre">
       <div className="container">

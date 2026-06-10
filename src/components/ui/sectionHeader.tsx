@@ -5,7 +5,7 @@ type SectionHeaderProps = {
   dark?: boolean;
 };
 
-function SectionHeader({ eyebrow, title, description, dark = false }: SectionHeaderProps) {
+export function SectionHeader({ eyebrow, title, description, dark = false }: SectionHeaderProps) {
   return (
     <div className="section-header">
       <span className={`eyebrow ${dark ? "is-dark" : ""}`}>{eyebrow}</span>

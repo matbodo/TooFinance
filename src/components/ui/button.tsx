@@ -1,11 +1,13 @@
 
+import type { ReactNode } from "react";
+
 type ButtonProps = {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
   variant?: "primary" | "accent" | "light" | "outline";
 };
 
-function Button({ href, children, variant = "primary" }: ButtonProps) {
+export function Button({ href, children, variant = "primary" }: ButtonProps) {
   return (
     <a className={`button button-${variant}`} href={href}>
       {children}

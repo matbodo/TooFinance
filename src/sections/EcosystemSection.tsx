@@ -1,5 +1,8 @@
+import { IconToken } from "../components/ui/iconToken";
+import { SectionHeader } from "../components/ui/sectionHeader";
+import { ecosystemItems } from "../data/ecosystem";
 
-function EcosystemSection() {
+export function EcosystemSection() {
   return (
     <section className="section" id="ecossistema">
       <div className="container">

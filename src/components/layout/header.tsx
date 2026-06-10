@@ -1,5 +1,8 @@
+import { useState } from "react";
+import { navItems } from "../../data/ecosystem";
+import { Button } from "../ui/button";
 
-function Header() {
+export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function closeMenu() {

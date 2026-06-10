@@ -1,5 +1,5 @@
 
-function SiteStyles() {
+export function SiteStyles() {
   return (
     <style>{`
       @import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap");
@@ -460,6 +460,13 @@ function SiteStyles() {
         margin-top: 10px;
         color: var(--color-muted);
         font-size: .94rem;
+      }
+
+      .article-link {
+        display: inline-flex;
+        margin-top: 18px;
+        color: var(--color-secondary);
+        font-weight: 800;
       }
 
       .tag-list {

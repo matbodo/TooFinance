@@ -1,5 +1,14 @@
+import type {
+  Article,
+  EcosystemItem,
+  NavItem,
+  Persona,
+  Solution,
+  StatItem,
+  Testimonial,
+} from "../types/site";
 
-const navItems: NavItem[] = [
+export const navItems: NavItem[] = [
   { label: "Ecossistema", href: "#ecossistema" },
   { label: "Soluções", href: "#produtos" },
   { label: "Sobre", href: "#sobre" },
@@ -7,15 +16,15 @@ const navItems: NavItem[] = [
   { label: "Contato", href: "#contato" },
 ];
 
-const heroStats: StatItem[] = [
+export const heroStats: StatItem[] = [
   { value: "R$2,4bi", label: "em crédito aprovado" },
   { value: "18 mil+", label: "profissionais atendidos" },
   { value: "7 segmentos", label: "do ecossistema" },
 ];
 
-const trustItems = ["BACEN", "SUSEP", "LGPD", "ISO 27001", "+18.000 clientes ativos"];
+export const trustItems = ["BACEN", "SUSEP", "LGPD", "ISO 27001", "+18.000 clientes ativos"];
 
-const ecosystemItems: EcosystemItem[] = [
+export const ecosystemItems: EcosystemItem[] = [
   {
     title: "Hospitais e Clínicas",
     description: "Capital de giro, financiamento de equipamentos e seguros corporativos.",
@@ -54,7 +63,7 @@ const ecosystemItems: EcosystemItem[] = [
   },
 ];
 
-const solutions: Solution[] = [
+export const solutions: Solution[] = [
   {
     id: "capital",
     title: "Fluxo de caixa saudável para sua operação de saúde",
@@ -155,7 +164,7 @@ const solutions: Solution[] = [
   },
 ];
 
-const personas: Persona[] = [
+export const personas: Persona[] = [
   {
     segment: "Clínicas e Hospitais",
     name: "Dra. Fernanda Costa",
@@ -186,7 +195,7 @@ const personas: Persona[] = [
   },
 ];
 
-const testimonials: Testimonial[] = [
+export const testimonials: Testimonial[] = [
   {
     text: "Conseguimos capital de giro em 36 horas para cobrir materiais cirúrgicos. Nenhum banco teria entendido nossa necessidade tão rápido.",
     author: "Dra. Fernanda Costa",
@@ -207,7 +216,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const articles: Article[] = [
+export const articles: Article[] = [
   {
     category: "Gestão Financeira",
     title: "Como estruturar capital de giro para sua clínica em 2025",
@@ -228,4 +237,4 @@ const articles: Article[] = [
   },
 ];
 
-const partners = ["TASY", "MV Sistemas", "Philips Tasy", "CFM", "TOTVS Saúde", "ANS", "Pagar.me"];
+export const partners = ["TASY", "MV Sistemas", "Philips Tasy", "CFM", "TOTVS Saúde", "ANS", "Pagar.me"];

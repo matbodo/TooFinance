@@ -1,5 +1,10 @@
+import { useMemo, useState } from "react";
+import { Card } from "../components/ui/card";
+import { IconToken } from "../components/ui/iconToken";
+import { SectionHeader } from "../components/ui/sectionHeader";
+import { solutions } from "../data/ecosystem";
 
-function SolutionsSection() {
+export function SolutionsSection() {
   const [activeSolutionId, setActiveSolutionId] = useState(solutions[0].id);
   const [amount, setAmount] = useState(100000);
 

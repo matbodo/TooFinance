@@ -1,5 +1,7 @@
+import { SectionHeader } from "../components/ui/sectionHeader";
+import type { StatItem } from "../types/site";
 
-function NumbersSection() {
+export function NumbersSection() {
   const numbers: StatItem[] = [
     { value: "R$2,4bi", label: "em crédito aprovado" },
     { value: "18 mil+", label: "clientes ativos" },

@@ -1,22 +1,22 @@
 
-type NavItem = {
+export type NavItem = {
   label: string;
   href: string;
 };
 
-type StatItem = {
+export type StatItem = {
   value: string;
   label: string;
 };
 
-type EcosystemItem = {
+export type EcosystemItem = {
   title: string;
   description: string;
   href: string;
   icon: string;
 };
 
-type Solution = {
+export type Solution = {
   id: string;
   title: string;
   shortTitle: string;
@@ -25,21 +25,21 @@ type Solution = {
   features: string[];
 };
 
-type Persona = {
+export type Persona = {
   segment: string;
   name: string;
   description: string;
   tags: string[];
 };
 
-type Testimonial = {
+export type Testimonial = {
   text: string;
   author: string;
   role: string;
   initials: string;
 };
 
-type Article = {
+export type Article = {
   category: string;
   title: string;
   description: string;

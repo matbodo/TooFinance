@@ -1,5 +1,6 @@
+import type { NavItem } from "../../types/site";
 
-function Footer() {
+export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">

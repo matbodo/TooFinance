@@ -1,5 +1,8 @@
+import { Card } from "../components/ui/card";
+import { SectionHeader } from "../components/ui/sectionHeader";
+import { testimonials } from "../data/ecosystem";
 
-function TestimonialsSection() {
+export function TestimonialsSection() {
   return (
     <section className="section section-soft">
       <div className="container">

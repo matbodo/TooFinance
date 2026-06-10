@@ -1,5 +1,6 @@
+import { trustItems } from "../data/ecosystem";
 
-function TrustBar() {
+export function TrustBar() {
   return (
     <div className="trust-list" aria-label="Credenciais">
       {trustItems.map((item) => (

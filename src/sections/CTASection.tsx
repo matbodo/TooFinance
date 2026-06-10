@@ -1,5 +1,6 @@
+import { Button } from "../components/ui/button";
 
-function CTASection() {
+export function CTASection() {
   return (
     <section className="section" id="contato">
       <div className="container">

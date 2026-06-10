@@ -1,5 +1,7 @@
+import { SectionHeader } from "../components/ui/sectionHeader";
+import { partners } from "../data/ecosystem";
 
-function PartnersSection() {
+export function PartnersSection() {
   return (
     <section className="section section-soft">
       <div className="container">

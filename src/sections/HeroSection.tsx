@@ -1,5 +1,7 @@
+import { Button } from "../components/ui/button";
+import { heroStats } from "../data/ecosystem";
 
-function HeroSection() {
+export function HeroSection() {
   return (
     <section className="hero">
       <div className="container hero-grid">
