@@ -360,24 +360,34 @@ export function SiteStyles() {
       }
 
       .hero {
+        position: relative;
         display: grid;
         align-items: center;
-        padding: 78px 0 70px;
+        min-height: 560px;
+        padding: 104px 0 108px;
+        overflow: hidden;
         color: var(--color-text);
-        background:
-          linear-gradient(90deg, rgba(245,247,243,.96), rgba(245,247,243,.72)),
-          #fff;
+        background: #fff;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: #fff;
+        clip-path: polygon(0 0, 62% 0, 38% 100%, 0 100%);
+        pointer-events: none;
       }
 
       .hero-grid {
-        display: grid;
-        grid-template-columns: minmax(0, .92fr) minmax(420px, .78fr);
-        gap: 48px;
-        align-items: center;
+        display: block;
       }
 
       .hero-content {
-        max-width: 720px;
+        position: relative;
+        z-index: 2;
+        max-width: 560px;
       }
 
       .hero .lead {
@@ -413,41 +423,72 @@ export function SiteStyles() {
       }
 
       .hero-media {
-        position: relative;
-        min-height: 420px;
-        border-radius: var(--radius-lg);
+        position: absolute;
+        inset: 0 0 0 auto;
+        z-index: 0;
+        width: 58vw;
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+        border-radius: 0;
         overflow: hidden;
-        border: 1px solid var(--color-border);
-        box-shadow: var(--shadow-card);
-        background: #fff;
+        border: 0;
+        box-shadow: none;
+        background: var(--color-bg);
+      }
+
+      .hero-media-track {
+        display: flex;
+        width: 600%;
+        height: 100%;
+        animation: heroBannerSlide 34s ease-in-out infinite;
       }
 
       .hero-media img {
         display: block;
-        width: 100%;
+        flex: 0 0 calc(100% / 6);
+        width: calc(100% / 6);
         height: 100%;
-        min-height: 420px;
+        min-height: 560px;
         object-fit: cover;
+        object-position: center right;
+      }
+
+      @keyframes heroBannerSlide {
+        0%, 13% {
+          transform: translateX(0);
+        }
+
+        18%, 31% {
+          transform: translateX(calc(-100% / 6));
+        }
+
+        36%, 49% {
+          transform: translateX(calc(-200% / 6));
+        }
+
+        54%, 67% {
+          transform: translateX(calc(-300% / 6));
+        }
+
+        72%, 85% {
+          transform: translateX(calc(-400% / 6));
+        }
+
+        90%, 100% {
+          transform: translateX(calc(-500% / 6));
+        }
       }
 
       .hero-media::after {
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, transparent 42%, rgba(31,77,53,.78));
+        background: linear-gradient(90deg, rgba(255,255,255,0), rgba(31,77,53,.08));
       }
 
       .hero-media figcaption {
-        position: absolute;
-        left: 22px;
-        right: 22px;
-        bottom: 22px;
-        z-index: 1;
-        padding: 18px;
-        border-radius: var(--radius-md);
-        background: rgba(255,255,255,.94);
-        color: var(--color-muted);
-        font-size: .92rem;
+        display: none;
       }
 
       .hero-media figcaption strong {
@@ -1364,8 +1405,33 @@ export function SiteStyles() {
           grid-template-columns: 1fr;
         }
 
+        .hero {
+          min-height: auto;
+          padding: 72px 0;
+        }
+
+        .hero::before {
+          display: none;
+        }
+
+        .hero-grid {
+          display: grid;
+          gap: 36px;
+        }
+
+        .hero-content {
+          max-width: 720px;
+        }
+
         .hero-media {
+          position: relative;
+          inset: auto;
+          width: 100%;
+          height: auto;
           min-height: 320px;
+          border: 1px solid var(--color-border);
+          border-radius: var(--radius-lg);
+          pointer-events: auto;
         }
 
         .hero-media img {
@@ -1437,15 +1503,11 @@ export function SiteStyles() {
 
         .hero-media {
           min-height: 260px;
+          border-radius: var(--radius-md);
         }
 
         .hero-media img {
           min-height: 260px;
-        }
-
-        .hero-media figcaption {
-          position: static;
-          border-radius: 0;
         }
 
         .feature-list,
