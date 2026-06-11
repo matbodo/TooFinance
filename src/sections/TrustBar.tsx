@@ -3,7 +3,6 @@ import {
   Landmark,
   LockKeyhole,
   ShieldCheck,
-  UsersRound,
 } from "lucide-react";
 
 const trustItems = [
@@ -22,11 +21,7 @@ const trustItems = [
   {
     icon: ShieldCheck,
     label: "ISO 27001",
-  },
-  {
-    icon: UsersRound,
-    label: "+18.000 clientes ativos",
-  },
+  }
 ];
 
 export function TrustBar() {

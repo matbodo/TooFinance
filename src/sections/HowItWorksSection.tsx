@@ -1,36 +1,48 @@
+import { ClipboardList, Lightbulb, MessageCircle } from "lucide-react";
+
 const steps = [
   {
-    title: "Você informa seu perfil e necessidade",
-    description: "Preencha uma simulação rápida e conte qual solução financeira procura.",
+    description: "Conversa inicial para entender seu perfil, necessidade e objetivo financeiro.",
+    icon: ClipboardList,
+    number: "1",
+    title: "Diagnóstico",
   },
   {
-    title: "Nossa equipe analisa as alternativas",
-    description: "Avaliamos opções compatíveis com seu perfil, objetivo, valor e momento.",
+    description: "Organizamos caminhos possíveis em crédito, seguros, pagamentos ou planejamento.",
+    icon: Lightbulb,
+    number: "2",
+    title: "Curadoria",
   },
   {
-    title: "Apresentamos opções de crédito, seguro ou planejamento",
-    description: "Você recebe caminhos possíveis, próximos passos e documentos necessários.",
-  },
-  {
-    title: "Você escolhe e recebe acompanhamento",
-    description: "A TOO Finance acompanha o processo até a contratação com o parceiro indicado.",
+    description: "Apresentamos alternativas claras, documentos necessários e próximos passos.",
+    icon: MessageCircle,
+    number: "3",
+    title: "Proposta",
   },
 ];
 
 export function HowItWorksSection() {
   return (
-    <section className="section section-soft how-it-works" id="como-funciona">
+    <section className="process-section" id="como-funciona">
       <div className="container">
-        <div className="how-header">
-          <h2>Como a TOO Finance funciona em quatro passos simples</h2>
+        <div className="process-header">
+          <h2>Como funciona?</h2>
+          <p>
+            Da primeira análise à contratação, a TOO Finance organiza cada etapa para você decidir
+            com mais clareza e menos burocracia.
+          </p>
         </div>
 
-        <div className="steps-timeline" aria-label="Etapas de atendimento">
-          {steps.map((step, index) => (
-            <article className="timeline-step" key={step.title}>
-              <span className="timeline-number">{index + 1}</span>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
+        <div className="process-grid" aria-label="Etapas de atendimento">
+          {steps.map(({ description, icon: Icon, number, title }) => (
+            <article className="process-card" key={number}>
+              <span className="process-icon" aria-hidden="true">
+                <Icon size={42} strokeWidth={1.9} />
+              </span>
+              <h3>
+                {number}. {title}
+              </h3>
+              <p>{description}</p>
             </article>
           ))}
         </div>
